@@ -1,0 +1,35 @@
+{
+  "name": "x-range",
+  "version": "1.0.0",
+  "description": "Lazy range iterator for JavaScript, with lazy versions of Map and Filter",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevinGin/x-range.git"
+  },
+  "keywords": [
+    "range",
+    "lazy",
+    "xRange",
+    "x-range",
+    "lazy-range",
+    "lazy-map",
+    "lazy-filter",
+    "map",
+    "filter"
+  ],
+  "author": "Kevin Gin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KevinGin/x-range/issues"
+  },
+  "homepage": "https://github.com/KevinGin/x-range#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^3.5.3",
+    "nodemon": "^1.12.1"
+  }
+}
