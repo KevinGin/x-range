@@ -4,7 +4,7 @@
   "description": "Lazy range iterator for JavaScript, with lazy versions of Map and Filter",
   "main": "index.js",
   "scripts": {
-    "test": "mocha spec.js"
+    "test": "mocha --watch spec.js"
   },
   "repository": {
     "type": "git",
