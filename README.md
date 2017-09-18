@@ -1,5 +1,5 @@
 # x-range
-Lazy range iterator for JavaScript, with lazy version of map.
+Lazy range iterator for JavaScript, with a lazy version of map and other functional tools
 
 ---
 

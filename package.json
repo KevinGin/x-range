@@ -1,7 +1,7 @@
 {
   "name": "x-range",
   "version": "1.0.0",
-  "description": "Lazy range iterator for JavaScript, with lazy versions of Map and Filter",
+  "description": "Lazy range iterator for JavaScript, with a lazy version of map and other functional tools",
   "main": "index.js",
   "scripts": {
     "test": "mocha --watch spec.js"
