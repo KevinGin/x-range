@@ -1,8 +1,5 @@
 module.exports = xRange;
 
-console.log('xRange.js got called')
-
-
 // Edge case increment === 0...
 // Note that will not make infinite series on forEach/reduce
 //  (since increment will be negative or zero)
