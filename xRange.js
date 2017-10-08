@@ -3,7 +3,7 @@ module.exports = xRange;
 // Edge case increment === 0...
 // Note that will not make infinite series on forEach/reduce
 //  (since increment will be negative or zero)
-function xRange(start,end,increment) {
+function xRange(start, end, increment) {
   if (end === undefined) {
     this.start = 0;
     this.end = start;
@@ -26,7 +26,7 @@ xRange.prototype.next = function() {
   var toReturn = this.current;
   // call each lazy map
   for (var i = 0; i < this.maps.length; i++) {
-    toReturn = this.maps[i](toReturn,this.currentIndex);
+    toReturn = this.maps[i](toReturn, this.currentIndex);
   }
   this.currentIndex ++;
   this.current += this.increment;
@@ -39,7 +39,7 @@ xRange.prototype.forEach = function(cb) {
   this.current = this.start;
   this.currentIndex = 0;
   for (var i = 0; i < this.length; i++) {
-    cb(this.next(),i);
+    cb(this.next(), i);
   }
   this.maps = [];
 }
@@ -52,14 +52,14 @@ xRange.prototype.xMap = function(cb) {
 
 xRange.prototype.map = function(cb) {
   var toReturn = new Array(this.length);
-  this.forEach((val,index) => {
-    toReturn[index] = cb(val,index);
+  this.forEach((val, index) => {
+    toReturn[index] = cb(val, index);
   })
   return toReturn;
 }
 
 //cb(acc,val,index)
-xRange.prototype.reduce = function(cb,acc) {
+xRange.prototype.reduce = function(cb, acc) {
   this.current = this.start;
   var i = 0;
   if (acc === undefined) {
@@ -67,7 +67,7 @@ xRange.prototype.reduce = function(cb,acc) {
     acc = this.next();
   }
   while (i < this.length) {
-    acc = cb(acc,this.next(),i);
+    acc = cb(acc, this.next(), i);
     i++;
   }
   this.maps = [];
@@ -76,8 +76,8 @@ xRange.prototype.reduce = function(cb,acc) {
 
 xRange.prototype.filter = function(cb) {
   var toReturn = [];
-  this.forEach((val,index) => {
-    if (cb(val,index)) {
+  this.forEach((val, index) => {
+    if (cb(val, index)) {
       toReturn.push(val);
     }
   })
