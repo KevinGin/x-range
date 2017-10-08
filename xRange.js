@@ -88,9 +88,6 @@ xRange.prototype.toArray = function() {
   return this.map(v => v);
 }
 
-
-
-
 // xRange.prototype.show = function(cb) {
 //   var toShow = new Array(this.length);
 //   this.forEach((v,i) => {
@@ -104,18 +101,3 @@ xRange.prototype.toArray = function() {
 // var print = (v) => console.log(v);
 
 // var r = new xRange(1,4,3);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
