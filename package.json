@@ -1,6 +1,6 @@
 {
   "name": "x-range",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lazy range iterator for JavaScript, with a lazy version of map and other functional tools",
   "main": "index.js",
   "scripts": {
